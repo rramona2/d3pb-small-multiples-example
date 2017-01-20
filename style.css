@@ -1,0 +1,113 @@
+*:hover {
+  transition: all 0.2s;
+}
+
+body {
+  color: #555;
+  font-size: 1em;
+}
+
+a {
+  color: rgb(128, 0, 38);
+}
+
+a:hover {
+  color: rgb(227, 26, 28);
+}
+
+.header {
+  padding: 0 50px 25px 50px;
+}
+
+.header__inner {
+  padding-bottom: 25px;
+  border-bottom: 1px solid gray;
+  line-height: 200%;
+}
+
+.superbugs-chart__container {
+  width: 33%;
+  float: left;
+  padding-bottom: 50px;
+}
+
+.superbugs-chart__wrapper,
+.superbugs-chart__title,
+.superbugs-chart__info,
+.d3-playbooks__infobox {
+  padding: 0 50px 0 50px;
+}
+
+.superbugs-chart__wrapper {
+  position: relative;
+}
+
+.superbugs-chart__title p {
+  font-size: .8em;
+}
+
+.superbugs-chart__title h3 {
+  font-size: .9em;
+}
+
+.superbugs-chart__svg .label {
+  fill: black;
+}
+
+.superbugs-chart__svg .bar {
+  fill-opacity: .6;
+}
+
+.superbugs-chart__svg .bar:hover {
+  fill-opacity: 1;
+}
+
+.d3-playbooks__infobox {
+  height: 25px;
+}
+
+.d3-playbooks__infobox p {
+  padding: 0;
+  margin: 0;
+}
+
+.d3-playbooks__infobox.-empty {
+  visibility: hidden;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.eudata {
+  font-size: .7em;
+  font-weight: bold;
+}
+
+.source {
+  font-size: .7em;
+  color: gray;
+  font-style: italic;
+}
+
+@media (max-width: 899px) {
+  .superbugs-chart__container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 499px) {
+  .superbugs-chart__container {
+    width: 100%;
+  }
+  .superbugs-chart__wrapper,
+  .superbugs-chart__title,
+  .superbugs-chart__info,
+  .header,
+  .d3-playbooks__infobox {
+    padding: 0 20px 0 20px;
+  }
+}
+
+

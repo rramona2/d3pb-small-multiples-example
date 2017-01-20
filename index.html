@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>small multiples with d3-playbooks</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" type="text/css" media="screen" title="normalize" charset="utf-8">
+  <link rel="stylesheet" href="./style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+  <header class="header">
+    <section class="header__inner">
+      <h3>d3-playbooks example</h3>
+      <h1>small multiples</h1>
+      <p>See original publication at <a href="https://correctiv.org/en/investigations/superbugs/atlas/superbug-atlas-e-coli-cephalosporins/">https://correctiv.org/superbugs</a></p>
+      <p>This example demonstrates how to use <a href="https://github.com/simonwoerpel/d3-playbooks"><code>d3-playbooks</code></a> to render small multiples. See <a href="https://github.com/simonwoerpel/d3pb-small-multiples-example/blob/master/README.md"><code>README</code></a> for details.</p>
+      <p>The datasource is a single <a href="https://docs.google.com/spreadsheets/d/1dzbZkuUNCQ5OblONIygIXPVfK0UcizlaHS7p6Kg9MMo/edit#gid=0">Google Spreadsheet</a> loaded via <a href="https://github.com/simonwoerpel/load-spreadsheets-js"><code>load-spreadsheet.js</code></a>.</p>
+      <p>Hover (or tap on touchscreens) on bars to display data for this country.</p>
+    </section>
+  </header>
+
+  <main class="main"></main>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="./lib/load-spreadsheets.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./lib/d3-playbooks.base.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./lib/d3-playbooks.riot-components.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./superbugs.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
